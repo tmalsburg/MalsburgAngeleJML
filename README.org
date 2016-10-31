@@ -1,0 +1,13 @@
+
+
+Data, code, and simulation results used in:
+
+- von der Malsburg, T., & Angele, B. (2016). False positives and other
+  statistical errors in standard analyses of eye movements in
+  reading. Journal of Memory and Language, (in press).
+
+Preprint available on arXiv: https://arxiv.org/abs/1504.06896
+
+The code for the simulation is in [[file:R/simulation.script.R]].  It runs 100 iterations of the simulation.  We used a cluster computer to run many of these in parallel.  Each iteration produces one file with the results of that iteration.  The script [[file:R/collect_results.script.R]] is used to combine these results into one big data frame.  This data frame is stored in [[file:simulation_results/results.Rda]].  The analysis is embedded in the manuscript via Knitr, see [[file:manuscript.Rnw]].  This analysis uses functions defined in [[file:R/new_etmeasures.function.R]] and [[file:R/compute_model_parameters.function.R]].  The former is also used in the simulation.  The eye-tracking data used to derive the simulation parameters are in [[file:eyetracking_data/AngeleEtAl2013.csv]] and [[file:eyetracking_data/MetznerEtAl2016.tsv]].
+
+Please contact the authors if you want to use the code or data in this repository for your own work.
