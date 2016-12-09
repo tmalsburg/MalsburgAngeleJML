@@ -6,7 +6,9 @@ Data, code, and simulation results used in:
   statistical errors in standard analyses of eye movements in
   reading. Journal of Memory and Language, (in press).
 
-Preprint available on arXiv: https://arxiv.org/abs/1504.06896
+Paper at JML: http://www.sciencedirect.com/science/article/pii/S0749596X16301553
+
+Preprint on arXiv: https://arxiv.org/abs/1504.06896
 
 The code for the simulation is in [[file:R/simulation.script.R]].  The eye-tracking data used to derive the simulation parameters are in [[file:eyetracking_data/AngeleEtAl2013.csv]] and [[file:eyetracking_data/MetznerEtAl2016.tsv]].  The simulation script runs 100 iterations of the simulation.  We used a cluster computer to run many of these small simulations in parallel.  Each iteration produces one file with the results of that iteration.  The script [[file:R/collect_results.script.R]] is used to combine these results into one big data frame which is stored in [[file:simulation_results/results.Rda]].
 
